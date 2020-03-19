@@ -13,8 +13,8 @@ class Inverse_Kinematic
 {
     // user-accessible "public" doubleerface
     public:
-        Inverse_Kinematic(double a1 = 0, double a2 = 0, double a3 = 0, double alpha1 = 0, double alpha2 = 0, double alpha3 = 0, double d1 = 0, double d2 = 0, double d3 = 0);
-        void Calculate(double x, double y, double z, double stepSize);
+        Inverse_Kinematic(double = 0, double = 0, double = 0, double = 0, double = 0, double = 0, double = 0, double = 0, double = 0);
+        Arm_Configuration Calculate(double, double, double, double, double, double);
     
 
     // library-accessible "private" doubleerface
@@ -34,10 +34,9 @@ class Inverse_Kinematic
         double _y;
         double _z;
         double _stepSize;
-    // output array of the calculated joint angles
-    // only 3 output angles because the robot is a 3 DoF arm
-        Arm_Configuration _armConfiguration;
     // Constants to keep the mechanical limitation of the robot joints angle in degrees
         const int MAX_JOINT_ANGLE = 180;
         const int MIN_JOINT_ANGLE = 0;
 };
+
+#endif

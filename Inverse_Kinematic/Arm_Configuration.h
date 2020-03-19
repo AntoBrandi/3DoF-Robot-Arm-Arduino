@@ -11,7 +11,7 @@
 class Arm_Configuration
 {
 public:
-    Arm_Configuration(double theta1, double theta2, double theta3);
+    Arm_Configuration(double , double , double );
     double getTheta1();
     double getTheta2();
     double getTheta3();
@@ -22,3 +22,6 @@ private:
     double _theta2;
     double _theta3;
 };
+
+
+#endif

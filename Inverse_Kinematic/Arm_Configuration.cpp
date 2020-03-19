@@ -13,22 +13,22 @@
 Arm_Configuration::Arm_Configuration(double theta1, double theta2, double theta3)
 {
     //initialize the actual parameters of the class
-    this._theta1 = theta1;
-    this._theta2 = theta2;
-    this._theta3 = theta3;
+    _theta1 = theta1;
+    _theta2 = theta2;
+    _theta3 = theta3;
 }
 
 
 // getters method
 double Arm_Configuration::getTheta1()
 {
-    return this._theta1;
+    return _theta1;
 }
 double Arm_Configuration::getTheta2()
 {
-    return this._theta2;
+    return _theta2;
 }
 double Arm_Configuration::getTheta3()
 {
-    return this._theta3;
+    return _theta3;
 }
